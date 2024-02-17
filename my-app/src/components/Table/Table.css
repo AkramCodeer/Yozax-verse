@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 80%;
+  margin: 30px auto 0; /* Adjusted margin-top and centered horizontally */
+  max-height: 40px; /* Set max height */
+}
+
+h2 {
+  margin: 0;
+  margin-right: auto;
+}
+
+.show-button,
+.dispatch-button {
+  background-color: #003882;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.show-button:hover,
+.dispatch-button:hover {
+  background-color: #3c6eae;
+}
+
+.dropdown-select {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  width: 150px; /* Adjust width as needed */
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+}
+
+.prev-button,
+.next-button,
+.page-number {
+  background-color: #003882;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.prev-button:hover,
+.next-button:hover,
+.page-number:hover {
+  background-color: #3c6eae;
+}
+/* media-queries.css */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%; /* Adjust width for smaller screens */
+    overflow-x: auto; /* Enable horizontal scrolling */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}

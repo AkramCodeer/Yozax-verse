@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 50px auto 0; /* Added top margin */
+  }
+  
+  .left-section {
+    font-weight: bold;
+    font-size: x-large;
+  }
+  
+  .order-label {
+    margin-right: 20px; /* Add spacing between "Order" and "Create New" */
+  }
+  
+  .new-button {
+    padding: 10px 20px; /* Add padding to the button */
+    background-color: #003882; /* Normal button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+  }
+  
+  .new-button:hover {
+    background-color: #3c6eae; /* Darker purple color on hover */
+  }
+  /* Responsive media queries */
+@media screen and (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .left-section {
+      margin-bottom: 20px;
+    }
+  }

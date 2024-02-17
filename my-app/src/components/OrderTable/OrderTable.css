@@ -1,0 +1,51 @@
+.order-box-container {
+    display: flex;
+    justify-content: center;
+    max-width: 80%;
+    margin: 0 auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .orders-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .orders-table th,
+  .orders-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .orders-table th:last-child,
+  .orders-table td:last-child {
+    text-align: center;
+  }
+  
+  .select-checkbox {
+    margin-right: 5px;
+  }
+  
+  .edit-icon {
+    cursor: pointer;
+    color: blue;
+  }
+  
+  .edit-icon:hover {
+    text-decoration: underline;
+  }
+  @media screen and (max-width: 768px) {
+    .order-box-container {
+      max-width: 90%; /* Adjust max-width for smaller screens */
+      overflow-x: auto; /* Enable horizontal scrolling */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .order-box-container {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  }
